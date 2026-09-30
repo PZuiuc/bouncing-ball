@@ -1,2 +1,2 @@
-# bouncing-ball-with-side-wall
+# bouncing-ball
 synthetic data generation for a ball bouncing process
