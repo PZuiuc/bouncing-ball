@@ -1,0 +1,37 @@
+{
+  "ball_name": "egg",
+  "semi_axes_m": [
+    0.03690406310974703,
+    0.032919841623631575,
+    0.03629071633033226
+  ],
+  "mu_floor": 0.45087255917693436,
+  "mu_wall": 0.45312413834871773,
+  "e_floor": 0.5525947169129704,
+  "e_wall": 0.77405462538327,
+  "n_segments": 12,
+  "segment_ids": [
+    84,
+    164,
+    22,
+    243,
+    81,
+    112,
+    78,
+    146,
+    76,
+    9,
+    15,
+    60
+  ],
+  "outer_samples": 256,
+  "outer_iters": 20,
+  "inner_samples": 48,
+  "inner_iters": 6,
+  "fit_time_s": 94.08452343940735,
+  "wall_neg_y": -0.138,
+  "wall_pos_y": 0.14,
+  "belt_speed_x": 0.18,
+  "mass_kg": 0.05,
+  "note": "Fixed physical params for this ball, fit via a NESTED CEM (outer over shared params, inner per-segment omega0 search per outer candidate) across many clips. omega0 (spin) is NOT reusable -- it's per-toss, refit at inference time via the short-lookback CEM in contactnet_rolling_demo.py."
+}
